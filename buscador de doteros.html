@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2> BUSCADOR DE PERFILES DE DOTEROS PROFESIONALES</h2>
+
+<strong><label>Ponga su nombre  </label></strong>
+<input type="text" id="m1">
+<br><br>
+<strong> <label>Ponga su nickname</label></strong>
+<input type="text"id="m2"><br><br>
+
+<button onclick="calcular()">Buscar</button>
+<p id="resultado"></p>
+
+<script>
+    function calcular() {
+        //Lee los números que el usuario escribe//
+        let m1 = document.getElementById("m1").value.toLowerCase();
+        let m2 = document.getElementById("m2").value.toLowerCase();
+        //Comparaciones
+        if (m1 === "daniel" && m2 === "burbuja") {
+            document.getElementById("resultado").innerText = "LIMITADO , BANEAS NECROS Y PIERDE.... ANOTAOOOO";
+        }
+        else if (m1 === "ricardo" && m2 === "bombón") {
+            document.getElementById("resultado").innerText = "DEMASIADO GOZU , CARREANDO A MIDS LIMITADOS(DANIEL)";
+        }
+        else if(m1 ==="davort" && m2==="bellota") {
+            document.getElementById("resultado").innerText= "GOZU SINO SACA SU ZEUS NI SNIPER OFF ";
+            }
+         else {
+            document.getElementById("resultado").innerText = "No coincide 😅";
+
+
+        }
+    }
+</script>
+</body>
+</html>
